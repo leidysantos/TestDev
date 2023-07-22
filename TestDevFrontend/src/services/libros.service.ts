@@ -6,10 +6,18 @@ import {HttpClient} from '@angular/common/http';
 })
 export class LibrosService {
 
-  private apiUrl = 'http://localhost:5001/aoi/nombres';
+  private apiUrl = 'http://localhost:5001/api';
   constructor(private http: HttpClient) { }
 
-  getDatos() {
-    return this.http.get<any[]>(this.apiUrl);
+  getLibros() {
+    return this.http.get<any[]>(`${this.apiUrl}/libros`);
+  }
+
+  getAutores() {
+    return this.http.get<any[]>(`${this.apiUrl}/autores`);
+  }
+
+  getEditoriales() {
+    return this.http.get<any[]>(`${this.apiUrl}/editoriales`);
   }
 }
