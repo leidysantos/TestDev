@@ -10,30 +10,31 @@ namespace TestDevBackend.Controllers
     [ApiController]
     [Route("api/[controller]")]
 
-    // Controlador para gestionar los libros
-    public class librosController : ControllerBase
+    // Controlador para gestionar los autores
+    public class autoresController : ControllerBase
     {
         private readonly ApplicationDbContext _dbContext;
 
-        public librosController(ApplicationDbContext dbContext) { 
+        public autoresController(ApplicationDbContext dbContext)
+        {
             _dbContext = dbContext;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<libros>>> GetLibros()
+        public async Task<ActionResult<IEnumerable<autores>>> GetAutores()
         {
-            return await _dbContext.Libros.ToListAsync();
+            return await _dbContext.Autores.ToListAsync();
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<libros>> GetLibros(int id)
+        public async Task<ActionResult<autores>> GetAutores(int id)
         {
-            var libro = await _dbContext.Libros.FindAsync(id);
+            var autor = await _dbContext.Autores.FindAsync(id);
 
-            if (libro == null)
+            if (autor == null)
                 return NotFound();
 
-            return libro;
+            return autor;
         }
     }
 }

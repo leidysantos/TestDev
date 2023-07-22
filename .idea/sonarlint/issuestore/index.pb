@@ -75,8 +75,6 @@ Z
 *TestDevFrontend/src/app/app.component.html,c\2\c22a8590830605e614776375fc68cebb60b329af
 v
 FTestDevBackend/TestDevBackend/Controllers/WeatherForecastController.cs,5\3\536e671b5360ec2b954cc9b856b64e30877a7c8d
-^
-.TestDevFrontend/src/services/libros.service.ts,a\3\a3381e6630f88918895a200ebb44e08b8203b0f8
 X
 (TestDevFrontend/src/app/app.component.ts,4\9\49402c35a9de6e7322cd3b8840649357d5c4d3bf
 ^
@@ -87,5 +85,7 @@ m
 =TestDevBackend/TestDevBackend/Controllers/nombreController.cs,8\c\8ccfc26ad021d0b388ecb89d845d4d3c1942d5b2
 U
 %TestDevFrontend/src/app/app.module.ts,7\0\708ac27cf0ddce64af5c78ce7a9116ff184e38eb
+^
+.TestDevFrontend/src/services/libros.service.ts,a\3\a3381e6630f88918895a200ebb44e08b8203b0f8
 X
 (TestDevBackend/TestDevBackend/Startup.cs,a\d\ad17ba6317fad06bc44722e676910d58e262926c

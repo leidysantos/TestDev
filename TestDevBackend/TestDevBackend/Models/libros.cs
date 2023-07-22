@@ -1,5 +1,7 @@
 ﻿namespace TestDevBackend.Models
 {
+    // Clase que representa la tabla libros en la base de datos
+
     public class libros
     {
         public int ISBN { get; set; }
